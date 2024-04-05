@@ -14,7 +14,7 @@ route.post('/', postProducto)
 
 route.put('/:id_producto', putProducto)
 
-route.delete('/', deleteProducto)
+route.delete('/:id_producto', deleteProducto)
 // //Consultar un dato
 // route.get('/consultarUsuario', (req, res) => {
 //     res.json({
