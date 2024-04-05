@@ -11,9 +11,9 @@ route.get('/', getCategoria)
 
 route.post('/', postCategoria)
 
-route.put('/', putCategoria)
+route.put('/:id_categoria', putCategoria)
 
-route.delete('/', deleteCategoria)
+route.delete('/id_categoria', deleteCategoria)
 // //Consultar un dato
 // route.get('/consultarUsuario', (req, res) => {
 //     res.json({
