@@ -44,7 +44,7 @@ const putProducto = async(req, res) =>{
 }
 
 const deleteProducto = async(req, res) =>{
-    const {id_producto} = req.query //Desestructurar
+    const {id_producto} = req.params //Desestructurar
     let mensaje = ''
     try {
         const producto = await Producto.findOneAndDelete({id_producto: id_producto})
