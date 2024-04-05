@@ -12,7 +12,7 @@ route.get('/', getProducto)
 
 route.post('/', postProducto)
 
-route.put('/', putProducto)
+route.put('/:id_producto', putProducto)
 
 route.delete('/', deleteProducto)
 // //Consultar un dato
