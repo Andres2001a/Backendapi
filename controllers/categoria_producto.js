@@ -44,7 +44,7 @@ const putCategoria = async(req, res) =>{
 }
 
 const deleteCategoria = async(req, res) =>{
-    const {id_categoria} = req.query //Desestructurar
+    const {id_categoria} = req.params //Desestructurar
     try {
         const categoria = await Categoria.findOneAndDelete({id_categoria: id_categoria})
             mensaje = 'Eliminacion exitosa'
