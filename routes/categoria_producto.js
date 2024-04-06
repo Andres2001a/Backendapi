@@ -13,7 +13,7 @@ route.post('/', postCategoria)
 
 route.put('/:id_categoria', putCategoria)
 
-route.delete('/id_categoria', deleteCategoria)
+route.delete('/:id_categoria', deleteCategoria)
 // //Consultar un dato
 // route.get('/consultarUsuario', (req, res) => {
 //     res.json({
