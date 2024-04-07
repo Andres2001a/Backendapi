@@ -3,7 +3,7 @@ const {Schema, model} = require('mongoose')
 const CategoriaSchema = ({
     id_categoria:{
         type: Number,
-        unique:false,
+        unique:true,
         required:[true, 'El id de la categoria del producto es necesario']
     },
 
