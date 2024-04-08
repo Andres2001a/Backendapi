@@ -28,10 +28,10 @@ const postCategoria = async(req, res) => {
 
 
 const putCategoria = async(req, res) =>{
-    const {id_categoria, nombre_categoria, descripcion_categoria} = req.body
+    const {id_categoria, nombre_categoria, descripcion_categoria,estado} = req.body
     try {
         const categoria = await Categoria.findOneAndUpdate({id_categoria: id_categoria},
-            {nombre_categoria:nombre_categoria, descripcion_categoria:descripcion_categoria
+            {nombre_categoria:nombre_categoria, descripcion_categoria:descripcion_categoria,estado:estado
             })
             mensaje = 'Actualizacion exitosa'
     } catch(error) {
