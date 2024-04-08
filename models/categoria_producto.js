@@ -17,6 +17,11 @@ const CategoriaSchema = ({
         type: String,
         required:[true, 'la descripcion de la categoria es requerida'],
     }
+    estado: {
+        type:String,
+        unique: false,
+        required:[true, 'ingrese estado'],
+    },
 })
 
 
