@@ -28,7 +28,7 @@ const ProductoSchema = ({
 precio: {
         type:String,
         unique: false,
-        required:[valor'],
+        required:[true,'valor'],
     },
 
 })
