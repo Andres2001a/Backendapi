@@ -28,10 +28,10 @@ const postProducto = async(req, res) => {
 
 
 const putProducto = async(req, res) =>{
-    const {id_producto, nombre_producto, talla, descripcion_producto} = req.body
+    const {id_producto, nombre_producto, talla, descripcion_producto,precio} = req.body
     try {
         const producto = await Producto.findOneAndUpdate({id_producto: id_producto},
-            {nombre_producto:nombre_producto, talla:talla, descripcion_producto:descripcion_producto
+            {nombre_producto:nombre_producto, talla:talla, descripcion_producto:descripcion_producto,precio:precio
             })
             mensaje = 'Actualizacion exitosa'
     } catch(error) {
