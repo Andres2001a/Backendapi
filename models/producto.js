@@ -24,12 +24,13 @@ const ProductoSchema = ({
         unique: false,
         required:[true, 'La descripcion del producto es requerida'],
     },
-    
-precio: {
+    precio:{
         type:String,
-        unique: false,
-        required:[true,'valor'],
-    },
+        unique:false,
+        required:[true, 'precio'],
+    }
+    
+
 
 })
 
