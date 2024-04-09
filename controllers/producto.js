@@ -1,4 +1,3 @@
-
 const {response} = require('express')
 
 Producto = require('../models/producto')
